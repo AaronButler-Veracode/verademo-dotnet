@@ -20,11 +20,10 @@ jobs:
   
 #     runs-on: windows-latest
     steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it and copies all sources into ZIP file for submitting for analysis. Replace this section with your applications build steps
     - uses: actions/checkout@v3
       with:
-        repository: ${{ inputs.repository }}
-        ref: ${{ inputs.ref }}
-        token: ${{ inputs.token }}
+        repository: ''
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v3
       with:
