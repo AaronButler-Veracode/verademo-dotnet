@@ -31,8 +31,8 @@ jobs:
     - name: Build
       run: |
         ls -l
-        dotnet restore Verademo-Dotnet\Verademo-dotnet.csproj
-        dotnet publish Verademo-Dotnet\Verademo-dotnet.csproj -c Debug -o ./output
+        dotnet restore 
+        dotnet publish -c Debug -o ./output
     - name: Create zip archive
       run: zip -r veracode.zip ./output
 
